@@ -1,0 +1,120 @@
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+   width: 300px;
+   background-color: hsla(0, 0%, 100%, 0.876);
+}
+.main-container{
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.5);
+    height: 350px;
+}
+
+.login-form{
+    width: 100%;
+    text-align: center;
+    animation: slide-down 0.5s ease;
+    background-color: #dfe0e8;
+    padding: 20px 0;
+    height: 350px;
+}
+
+form input{
+    padding: 10px;
+    width: 80%;
+    border: 1px solid black;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+button{
+     background-color: #0000ff;
+     color: #fff;
+     outline: none;
+     border: none;
+     padding: 10px;
+     width: 80%;
+     border-radius: 10px;
+     cursor: pointer;
+}
+.login-img{
+    display: none;
+}
+section.login{
+    display: flex;
+}
+section.register{
+    display: none;
+}
+section.forgot{
+    position: relative;
+    display: none;
+}
+section.forgot .icon-close{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid #ff0000;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+    color: crimson;
+}
+form span{
+    display: block;
+}
+
+form a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes slide-up{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width:500px){
+    .container{
+        width: 550px;
+     }
+     .main-container{
+        width: 550px;
+        display: flex;
+        border-radius: 5px;
+        width: 100%;
+        justify-content: space-between;
+        overflow: hidden;
+        box-shadow: 0 3px 30px rgba(0, 0, 0, 0.5);
+     }
+     .login-img{
+        flex: 50%;
+        background-color: #0000ff;
+        padding: 20px;
+        display: block;
+     }
+     img{
+        width: 100%;
+    }
+    .login-form{
+        padding: 15px;
+        height: 100%;
+        width: 50%;
+    }
+    form input{
+        width: 80%;
+    }
+}
